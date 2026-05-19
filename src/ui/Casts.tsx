@@ -1,7 +1,8 @@
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi2";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css";
+// import "swiper/css";
+// import "swiper/css";
+import "swiper/swiper-bundle.css";
 import { Navigation } from "swiper/modules";
 
 import Cast from "./Cast";

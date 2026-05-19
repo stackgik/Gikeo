@@ -11,7 +11,7 @@ import NavItem from "./NavItem";
 const MainNav = () => {
   return (
     <nav>
-      <ul className="flex flex-col gap-4">
+      <ul className="flex flex-col gap-2">
         <NavItem to={"/dashboard"} label={"Dashboard"} Icon={HiOutlineHome} />
         <NavItem
           to={"/explore/movies"}

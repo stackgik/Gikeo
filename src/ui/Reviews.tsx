@@ -1,11 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/swiper-bundle.css";
 
 // import required modules
 import { Navigation, Pagination } from "swiper/modules";
@@ -14,7 +8,6 @@ import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi2";
 import Review from "./Review";
 import Tag from "./Tag";
 import useMovieDetails from "../features/movies/useMovieDetails";
-// import Spinner from "./Spinner";
 
 const Reviews = () => {
   // prettier-ignore

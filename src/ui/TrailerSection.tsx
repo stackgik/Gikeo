@@ -1,12 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
+import "swiper/swiper-bundle.css";
 import Trailer from "./Trailer";
 import Tag from "./Tag";
 import useMovieDetails from "../features/movies/useMovieDetails";

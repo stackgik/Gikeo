@@ -57,10 +57,15 @@ const Media = ({
       <section className="scrollbar-hide mx-auto my-16 flex w-custom-min-width gap-4 overflow-x-scroll">
         {isLoadingData
           ? ["a", "b", "c", "d", "e", "f"].map((_, index) => (
-              <SkeletonCard key={index} />
+              // [CHANGED] Wrap skeleton in a fixed-width shell to match card sizing
+              <div key={index} className="w-[185px] shrink-0">
+                <SkeletonCard />
+              </div>
             ))
           : cleanedData?.map((el) => (
-              <MediaCard key={el.id} mediaData={el} mediaType={el.mediaType} />
+              <div key={el.id} className="w-[185px] shrink-0">
+                <MediaCard mediaData={el} mediaType={el.mediaType} />
+              </div>
             ))}
       </section>
     </>
