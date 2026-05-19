@@ -43,14 +43,14 @@ const AllMedia = ({  allMediaData,  isAllMediaLoading,  allMediaError,  pageNum,
         </div>
 
         {isAllMediaLoading ? (
-          <div className="grid h-fit w-full grid-cols-6 gap-x-6 gap-y-8 miniDesktop:grid-cols-5 PC:grid-cols-5 tablet:grid-cols-3 mobile:grid-cols-2">
+          <div className="grid h-fit w-full grid-cols-6 gap-x-4 gap-y-8 miniDesktop:grid-cols-5 PC:grid-cols-5 tablet:grid-cols-3 mobile:grid-cols-2">
             {Array.from({ length: 20 }, (_, index) => (
               <SkeletonCard key={index} />
             ))}
           </div>
         ) : (
           allMediaData.length > 0 && (
-            <div className="grid h-fit w-full grid-cols-6 gap-x-6 gap-y-8 miniDesktop:grid-cols-5 PC:grid-cols-5 tablet:grid-cols-3 mobile:grid-cols-2">
+            <div className="grid h-fit w-full grid-cols-6 gap-x-4 gap-y-8 miniDesktop:grid-cols-5 PC:grid-cols-5 tablet:grid-cols-3 mobile:grid-cols-2">
               {allMediaData.map((media) => (
                 <MediaCard
                   mediaData={media}
