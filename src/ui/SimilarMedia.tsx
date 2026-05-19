@@ -32,14 +32,14 @@ const SimilarMedia = () => {
       <div className="scrollbar-hide flex gap-4 overflow-x-scroll">
         {isMovieDetailsLoading
           ? ["a", "b", "c", "d", "e", "f"].map((_, index) => (
-              <SkeletonCard key={index} />
+              <div key={index} className="w-[185px] shrink-0">
+                <SkeletonCard />
+              </div>
             ))
           : refinedSimilarMovies?.map((similarMovie) => (
-              <MediaCard
-                mediaData={similarMovie}
-                mediaType={"movie"}
-                key={similarMovie.id}
-              />
+              <div key={similarMovie.id} className="w-[185px] shrink-0">
+                <MediaCard mediaData={similarMovie} mediaType={"movie"} />
+              </div>
             ))}
       </div>
       {!refinedSimilarMovies?.length ? (
