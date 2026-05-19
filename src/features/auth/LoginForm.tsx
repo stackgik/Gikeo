@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const LoginForm = (): JSX.Element => {
   const [focusedField, setFocusedField] = useState<string | null>(null);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("examplereach@gmail.com");
+  const [password, setPassword] = useState("Adedoyin1994!");
   const { login, isLoggingIn } = useLogin();
 
   const handleFocus = (field: string) => setFocusedField(field);
