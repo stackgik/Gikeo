@@ -26,8 +26,8 @@ const Banner = () => {
       className="flex h-[50rem] w-full items-center justify-center"
       style={{
         backgroundImage: `linear-gradient(
-            rgba(17, 24, 39, 0.85),
-            rgba(17, 24, 39, 0.85)
+            rgba(17, 24, 39, 0.65),
+            rgba(17, 24, 39, 0.65)
           ), url(https://image.tmdb.org/t/p/original/${selectedBackdrop?.backdrop_path})`,
         backgroundSize: "cover",
         backgroundPosition: "top",
